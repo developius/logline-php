@@ -2,7 +2,7 @@
 LogLine is an entirely web-based logging platform. This PHP library interfaces with it to allow you to utilise LogLine in your PHP applications.
 
 ## Installation
-Simply copy [class.logline.php](blob/master/class.logline.php) to a location of your choice and include it from PHP like so:
+Simply copy [class.logline.php](class.logline.php) to a location of your choice and include it from PHP like so:
 
 ```php
 include("/path/to/class.logline.php");
@@ -29,4 +29,4 @@ if ($logline->fatal("Oh man, this is bad")){
 
 ## Tests
 
-There is a [test script](/blob/master/test.php) included for testing purposes, it may prove useful, or it may not.
+There is a [test script](test.php) included for testing purposes, it may prove useful, or it may not.
