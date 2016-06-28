@@ -44,13 +44,13 @@ class LogLine {
 		return $this->log("info", $message);
 	}
 	function success($message) {
-		return $this->log("info", $message);
+		return $this->log("success", $message);
 	}
 	function warning($message) {
-		return $this->log("info", $message);
+		return $this->log("warning", $message);
 	}
 	function fatal($message) {
-		return $this->log("info", $message);
+		return $this->log("fatal", $message);
 	}
 }
 ?>
