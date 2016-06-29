@@ -12,21 +12,24 @@
  */
 class LogLine {
 	function __construct($key) {
-		$this->key = urlencode($key);
+		$this->key = $this->clean($key);
 		$this->endpoint = "http://localhost:3000/api/v1/";
+	}
+
+	function clean($text) {
+		return str_replace("+", "%20", urlencode($text));
 	}
 
 	function log($flag, $message) {
 		$curl = curl_init();
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-		$flag = urlencode($flag);
-		$message = urlencode($message);
 		$data = http_build_query(array(
-			"flag" => $flag,
-			"msg" => $message,
+			"flag" => $this->clean($flag),
+			"msg" => $this->clean($message),
 			"key" => $this->key
 			));
+
 		curl_setopt($curl, CURLOPT_URL, $this->endpoint."msg?".$data);
 
 		$result = json_decode(curl_exec($curl));
