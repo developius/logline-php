@@ -2,10 +2,9 @@
 LogLine is an entirely web-based logging platform. This PHP library interfaces with it to allow you to utilise LogLine in your PHP applications.
 
 ## Installation
-Simply copy [class.logline.php](class.logline.php) to a location of your choice and include it from PHP like so:
 
-```php
-include("/path/to/class.logline.php");
+```
+composer require finnian/logline-php
 ```
 
 ## Example usage
