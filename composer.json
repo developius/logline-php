@@ -1,0 +1,13 @@
+{
+    "name": "finnian/logline-php",
+    "description": "PHP library for interfacing with LogLine",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Finnian Anderson",
+            "email": "finnian@fxapi.co.uk"
+        }
+    ],
+    "require": {}
+}
