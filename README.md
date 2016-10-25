@@ -4,7 +4,7 @@ LogLine is an entirely web-based logging platform. This PHP library interfaces w
 ## Installation
 
 ```
-composer require finnian/logline-php
+composer require developius/logline-php
 ```
 
 ## Example usage
