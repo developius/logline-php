@@ -13,7 +13,7 @@
 class LogLine {
 	function __construct($key) {
 		$this->key = $this->clean($key);
-		$this->endpoint = "http://localhost:3000/api/v1/";
+		$this->endpoint = "http://logline.online/api/v1/";
 	}
 
 	function clean($text) {
